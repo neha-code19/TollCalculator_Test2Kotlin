@@ -1,0 +1,263 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ResultActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:background="@color/purple_700"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="@string/ETR"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/v"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/Vsize"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vehicle_tv"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/Vsize"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/d"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/v"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Distance"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/distance_tv"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/vehicle_tv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Distance"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/t"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/d"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/Time"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/distance_tv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/Time"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/dir"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/t"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Direction"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/direction_tv"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/time_tv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="sans-serif"
+            android:text="direct"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/trans"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/dir"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Transponder"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/transponder_tv"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/direction_tv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif"
+            android:text="direct"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/toll"
+            android:layout_width="200dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/trans"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Toll"
+            android:textColor="@color/black"
+            android:textSize="15pt"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tolltotal"
+            android:layout_width="150dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/transponder_tv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif"
+            android:text="direct"
+            android:textColor="@color/black"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/toll" />
+
+
+        <TextView
+            android:id="@+id/webpage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Loading webpage....."
+            android:textColor="@color/black"
+            android:textSize="14pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

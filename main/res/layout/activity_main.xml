@@ -1,0 +1,212 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:background="@color/purple_700"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/ETR"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/Vehicle_size"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_gravity="left"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:text="@string/Vsize"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radio_vehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_light"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:text="@string/LV"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_heavy"
+            android:layout_width="150dp"
+            android:layout_height="53dp"
+            android:text="@string/HV"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/radio_multiHeavy"
+            android:layout_width="124dp"
+            android:layout_height="53dp"
+            android:text="@string/HMV"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Distance"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_gravity="left"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:text="@string/Distance"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/enterkm"
+            android:layout_width="346dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:hint="23.96"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="Km"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time_of_day"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_gravity="left"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:text="@string/Time"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/time_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:entries="@array/TimeOfTheDay" />
+
+
+    <RadioGroup
+        android:id="@+id/radio_dir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_east"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:text="@string/EB"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+        <RadioButton
+            android:id="@+id/radio_west"
+            android:layout_width="199dp"
+            android:layout_height="53dp"
+            android:text="@string/WB"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+
+
+    <Switch
+        android:id="@+id/TransponderSwitch"
+        android:layout_width="401dp"
+        android:layout_height="59dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:text="Transponder"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Load Online Calculator"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="28dp"
+            android:backgroundTint="@color/black"
+            android:paddingLeft="50dp"
+            android:textColor="@color/purple_500" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/calculate" />
+
+</LinearLayout>

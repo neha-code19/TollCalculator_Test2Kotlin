@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Neha_MAPD711_Test</string>
+    <string name="ETR">407 ETR Toll Calculator</string>
+    <string name="Vsize">Vehicle Size</string>
+    <string name="LV">Light \nVehicle</string>
+    <string name="HV">Heavy \nVehicle</string>
+    <string name="HMV">Heavy \nMultiVehicle</string>
+    <string name="Distance">Distance (Less than 24 Km)</string>
+    <string name="Time">Time of Day</string>
+    <string-array name="TimeOfTheDay">
+        <item>Weekday 12:00 AM to 6:00Am</item>
+        <item>Weekday 6:00 AM to 7:00 AM</item>
+        <item>Weekday 7:00 AM to 9:30 AM</item>
+        <item>Weekday 9:30 AM to 10:30 AM</item>
+        <item>Weekday 10:30 AM to 2:30 PM</item>
+        <item>Weekday 2:30 PM to 3:30 PM</item>
+        <item>Weekday 3:30 PM to 6:00 PM</item>
+        <item>Weekday 6:30 PM to 7:00 PM</item>
+        <item>Weekday 7:00 PM to 12:00 AM</item>
+        <item>Weekends and Holidays 12:00 AM to 11:00 AM</item>
+        <item>Weekends and Holidays 11:00 AM to 7:00 PM</item>
+        <item>Weekends and Holidays 7:00 PM to 12:00 PM</item>
+    </string-array>
+    <string name="EB">East Bound</string>
+    <string name="WB">West Bound</string>
+    <string name="calculate">Calculate</string>
+</resources>
